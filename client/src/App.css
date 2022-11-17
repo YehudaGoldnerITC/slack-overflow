@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  direction: rtl;
+}
+
+.App {
+  text-align: center;
+}
+
+.MuiTableHead-root .MuiTableCell-root {
+  font-weight: bold !important;
+}
+.MuiTableCell-root {
+  direction: rtl;
+  text-align: center !important;
+}
+
+@media (max-width: 1000px) {
+  .MuiTableBody-root .MuiTableCell-root {
+    padding: 0.3rem 0rem !important;
+  }
+}
