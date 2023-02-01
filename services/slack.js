@@ -83,6 +83,7 @@ function observeBootcamp(bootcampObj, index) {
   };
 
   app.event('reaction_added', async ({ event, client }) => {
+    console.log('reaction_added', event);
     try {
       const sender = await User.setUser(event.user, app, bootcampObj.NAME, bootcampObj.TOKEN);
       const receiver = await User.setUser(
